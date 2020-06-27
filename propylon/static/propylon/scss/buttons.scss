@@ -1,0 +1,24 @@
+.btn-propy {
+    padding: 12px;
+    margin: 10px;
+    background-color: rgba(25, 30, 34, 0.49);
+    font-size: 18px;
+}
+
+.btn-propy-white {
+    border: 2px solid white;
+    color: white;
+    &:hover {
+        border: 2px solid #fec96b;   
+        color: #fec96b; 
+    }
+}
+
+.btn-propy-yellow {
+    border: 2px solid #fec96b;  
+    color: #fec96b; 
+    &:hover {
+        border: 2px solid white;   
+        color: white; 
+    } 
+}

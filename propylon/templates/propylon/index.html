@@ -1,0 +1,97 @@
+{% extends 'propylon/base.html' %}
+
+{% load render_bundle from webpack_loader %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="dtlw-banner banner d-flex justify-content-center align-items center">
+        <div>
+            <h1>Driving Transformation In The Legal World</h1>
+            <h5>Create the law, manage its complexity, and understand it with Propylon's innovative software solutions.</h5>
+            <div class="btn btn-propy btn-propy-white">SOLUTIONS TO CREATE THE LAW</div>
+            <div class="btn btn-propy btn-propy-yellow">SOLUTIONS TO UNDERSTAND THE LAW</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div style="text-align: center; padding: 80px;">
+        <h2>FEATURED PRODUCTS</h2>
+        <br>
+        <h2>Creating innovative software solutions to draft, manage, and understand legal content.</h2>
+    </div>
+
+
+    <div id="yt-video">
+        <video width="320" height="240">
+            <source src="https://www.youtube.com/embed?v=Hvs-HWXmnwA&feature=youtu.be"/>
+        </video>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6 ">
+            <a href="#">
+                <img style="display: block; margin: 0 auto;" src="{% static 'propylon/images/lwb360.png' %}" alt="lwb360">
+                <h5 style="text-align: center;">LWB 360 suite</h5>
+            </a>
+        </div>        
+        <div class="col-12 col-md-6 ">
+            <a href="#">
+                <img style="display: block; margin: 0 auto;" src="{% static 'propylon/images/TimeArc.png' %}" alt="time arc">
+                <h5 style="text-align: center;">TimeArc platform</h5>
+            </a>
+        </div>        
+    </div>
+</div>
+
+<section>
+    <div class="banner lms-banner d-flex justify-content-center align-items center">
+        <div>
+            <h1>Legislative Management Systems</h1>
+            <h5>Propylon is the world leader in legislative management solutions. 
+                We offer the only end-to-end product suite that supports all aspects 
+                of the legislative process from idea to law.</h5>
+            <div class="btn btn-propy btn-propy-white">LEARN MORE</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    Carousel here
+</section>
+
+<section>
+    <div class="banner lpp-banner d-flex justify-content-center align-items center">
+        <div>
+            <h1 style="text-shadow: 2px 2px 2px #23394e;">Legal Publishing Partnerships</h1>
+            <h5 style="text-shadow: 2px 2px 2px #23394e;">We collaborate with leading publishers to deliver intelligent 
+                research products that grow your revenue.</h5>
+            <div class="btn btn-propy btn-propy-white">LEARN MORE ABOUT PARTNERING WITH US</div>
+        </div>
+    </div>
+</section>
+
+<section  style="background-color:#345370; padding: 40px">
+    <div class="container">
+        <h2 style="color:white;" padding: 30px>Disrupting the legal and regulatory publishing landscape with innovative solutions 
+            that simplify the complex and connect people with the law</h2>
+    </div>
+</section>
+
+<section style="background-color: #2f2f2f;">
+    <div class="container">
+        <div style="padding: 60px 0"  class="row">
+            <div class="col-12 col-md-6">
+                <p>Privacy & Cookies | Terms & Conditions | Sitemap</p>
+                <p>Copyright © 2020 Propylon. All Rights Reserved</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p>social links</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

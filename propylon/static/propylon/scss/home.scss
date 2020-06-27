@@ -1,0 +1,22 @@
+.banner {
+    background-size: cover;
+    color: white;
+    max-width: 100%; 
+    height: 440px;
+    padding: 100px;
+    font-family: $base-font;
+    background-position: center;
+    h5 {
+        text-shadow: 2px 2px 2px #23394e;
+    }
+}
+
+.dtlw-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("https://www.propylon.com/wp-content/uploads/2016/08/iStock-629668612.jpg"); 
+}
+.lms-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("https://www.propylon.com/wp-content/uploads/2017/05/shutterstock_137320796.jpg");
+}
+.lpp-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("https://www.propylon.com/wp-content/uploads/2017/05/shutterstock_519473755-2.jpg");
+}

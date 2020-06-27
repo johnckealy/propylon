@@ -1,8 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 @import "config";
 @import "navbar";
-@import "home";
+@import "banners";
 @import "buttons";
+@import "carousel";
+@import "search";
+@import "home";
 
 
 body {
@@ -10,41 +13,3 @@ body {
     padding: 0;
 }
 
-p {
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    &:hover {
-        text-decoration: none;
-        color: black;
-    }
-}
-
-h1,h2,h5 {
-    font-family: $base-font; 
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0px;
-}
-
-h1 {
-    font-size: 60px;
-}
-h5 {
-    font-size: 22px;
-    max-width: 1000px;;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-#yt-video {
-    background-image: url("https://i.ytimg.com/vi/Hvs-HWXmnwA/maxresdefault.jpg");
-    background-size: cover;
-    margin: 0 auto;
-    height: 200px;
-}

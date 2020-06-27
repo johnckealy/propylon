@@ -1,11 +1,24 @@
 
 {% load static %}
 
-<div id="nav-upper"></div>
+<div id="nav-upper" >
+
+    <ul class="d-flex justify-content-end align-items-center">
+        <div class=search-wrapper>
+            <form method="get" action="">
+                <input id="search" type="text"  autocomplete="off" placeholder="Search... ">
+                <button id="search-submit" type=submit>&#9906;</button>
+            </form>
+        </div>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li style="background-color: red;" ><a href="#">Request a demo</a></li>
+    </ul>
+</div>
+
+
 <div id="nav-lower">
-
     <img src="{% static 'propylon/images/propylon-logo.png' %} " alt="logo">
-
     <div>    
         <div class="dropdown">
             <button class="dropbtn">About Us <span>&#8964;</span></button>
@@ -15,7 +28,6 @@
                 <a href="#">Newsletter</a>
             </div>
         </div>
-        
         <div class="dropdown">
             <button class="dropbtn">Legislative Solutions <span>&#8964;</span></button>
             <div class="dropdown-content">
@@ -24,11 +36,9 @@
                 <a href="#">LWB 360 Smartvote</a>
             </div>
         </div>
-
         <button class="dropbtn">Legal Research Solution</button>
         <button class="dropbtn">Big Four Firms</button>
         <button class="dropbtn">Legal Publishers</button>
         <button class="dropbtn">Insights</button>
-
     </div>
 </div>

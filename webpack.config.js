@@ -100,6 +100,10 @@ module.exports = {
     new BundleTracker({filename: './webpack-stats.json'}),
     new MiniCssExtractPlugin({
         filename: "application-[hash].css"
+    }),
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
     })
   ],
   mode: 'development'

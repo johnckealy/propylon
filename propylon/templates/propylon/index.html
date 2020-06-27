@@ -6,10 +6,12 @@
 {% block content %}
 
 <div class="container-fluid">
-    <div class="dtlw-banner banner d-flex justify-content-center align-items center">
+    <div class="banner d-flex justify-content-center align-items center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url({% static 'propylon/images/banner.jpg' %});">
         <div>
-            <h1>Driving Transformation In The Legal World</h1>
-            <h5>Create the law, manage its complexity, and understand it with Propylon's innovative software solutions.</h5>
+            <h1>A Transformation To Your Website</h1>
+            <h5 style="margin: 25px 0;"><strong>As an exercise, I've redesigned your website using 
+                HTML5 and CSS3. This is for demonstation only. I've told Google not to index the site, and will 
+                remove it after the Propylon team has had a chance to take a look!</strong></h5>
             <div class="btn btn-propy btn-propy-white">SOLUTIONS TO CREATE THE LAW</div>
             <div class="btn btn-propy btn-propy-yellow">SOLUTIONS TO UNDERSTAND THE LAW</div>
         </div>
@@ -17,10 +19,14 @@
 </div>
 
 <div class="container">
-    <div style="text-align: center; padding: 80px;">
-        <h2>FEATURED PRODUCTS</h2>
+    <div class="explanation-text">
+        <h2>JOHN KEALY'S BACKGROUND</h2>
         <br>
-        <h2>Creating innovative software solutions to draft, manage, and understand legal content.</h2>
+        <h2 style="font-size: 26px;">I've used Python for almost 10 years, though much of this was in a 
+            scientific/research capacity. More recently, web developement caught my interest – 
+            and I began to experiment with Flask and then Django. This Propylon mock-up site was 
+            written in Django 3.0. If you're interested, you can <a href="">see the source code here. </a> 
+         </h2>
     </div>
 
 
@@ -49,34 +55,67 @@
 <section>
     <div class="banner lms-banner d-flex justify-content-center align-items center">
         <div>
-            <h1>Legislative Management Systems</h1>
-            <h5>Propylon is the world leader in legislative management solutions. 
-                We offer the only end-to-end product suite that supports all aspects 
-                of the legislative process from idea to law.</h5>
-            <div class="btn btn-propy btn-propy-white">LEARN MORE</div>
+            <h1>Python and Restful APIs</h1>
+            <h5>One of Django's most powerful libraries is Django Rest Framework (DRF). I recently developed 
+                an API using DRF to process and serve weather balloon data from around the world. 
+            </h5>
+            <a href="https://api.skewt.org/api/sondes/?wmo_id=03005" target="_blank">
+                <div class="btn btn-propy btn-propy-white">See a sample API call</div>
+            </a>
         </div>
     </div>
 </section>
 
-<section>
-    Carousel here
-</section>
+    <div class="container">
+        <div class="explanation-text">
+            <h2 style="font-size: 26px;"> <strong>Webpack</strong> is a powerful tool that allows the bundling of 
+                javascript and css into single files, among other things. To make the carousel below, 
+                I leveraged Webpack to install a carousel package from Node Package Manager (NPM),
+                as well as applying minification, transpiling, and auto-prefixing. I've also customised the
+                carousel contents to highlight my current strengths.  
+            </h2>
+            {% include 'propylon/_carousel.html' %}
+        </div>
+    </div>
+
 
 <section>
     <div class="banner lpp-banner d-flex justify-content-center align-items center">
         <div>
-            <h1 style="text-shadow: 2px 2px 2px #23394e;">Legal Publishing Partnerships</h1>
-            <h5 style="text-shadow: 2px 2px 2px #23394e;">We collaborate with leading publishers to deliver intelligent 
-                research products that grow your revenue.</h5>
-            <div class="btn btn-propy btn-propy-white">LEARN MORE ABOUT PARTNERING WITH US</div>
+            <h1 style="text-shadow: 2px 2px 2px #23394e;">Javascript</h1>
+            <h5 style="text-shadow: 2px 2px 2px #23394e;">
+            My ability with Javscript is improving. But I wanted
+            to concentrate on the fundamentals of Vanilla Javascript before diving head first into the most popular
+            framework of the day, since these will change with the times. That said, I have completed tutorials in Vue.js, and 
+            I'd happily give React or Angular a try. </h5>
+            <h5> Click the link below to see an App I made for glider pilots
+            and meteorologists – it was written with Vanilla Javascript and a dash of D3.js.
+            </h5>
+            <a href="https://skewt.org" target="_blank">
+                <div class="btn btn-propy btn-propy-white">Visit SkewT.org</div>
+            </a>
         </div>
     </div>
 </section>
 
 <section  style="background-color:#345370; padding: 40px">
     <div class="container">
-        <h2 style="color:white;" padding: 30px>Disrupting the legal and regulatory publishing landscape with innovative solutions 
-            that simplify the complex and connect people with the law</h2>
+        <div class="d-flex">
+            <h2 style="color:white; padding: 20px; font-size: 20px;" > 
+                <p>
+                    I enjoy the challenge of <strong>full-stack</strong> ­– for me this means seeing an app from the frontend right through to 
+                    the server in production. You may have noticed the URL of this website: <strong>propylon.johnkealy.com</strong>. I set 
+                    up a VPS server using DigitalOcean to serve this Django app using <strong>Passenger</strong>, 
+                    <strong>Nginx</strong> and <strong>Gunicorn</strong>. Then I configured the DNS records for a subdomain of my portfolio site. 
+                    I even learned how to host multiple apps on the same server – greatly cutting down on my costs – 
+                    as well as how to set up SSL certificates.
+                </p>
+                <p> I've been a user of Linux as my only operating system for many years now; my favourite flavour is 
+                    Ubuntu. I'm good with the <strong>command line </strong>(bash/zsh/ssh) – this makes working with servers a lot easier. 
+                </p>
+            </h2>
+            <img src="{% static 'propylon/images/nginx.jpg' %}" alt="nginx">
+        </div>
     </div>
 </section>
 
@@ -88,7 +127,20 @@
                 <p>Copyright © 2020 Propylon. All Rights Reserved</p>
             </div>
             <div class="col-12 col-md-6">
-                <p>social links</p>
+                <p>I hope you've enjoyed browsing this mock-up of your Propylon website. It took me less than a day to 
+                    build, so its a little rough; but hopefully it gives a good impression of my current level of knowledge. 
+                </p>
+
+                <p>Please visit <a style="color:blue" href="https://johnkealy.com">johnkealy.com</a> for more, or visit my social links below. I hope to hear from you regarding 
+                    the position of Junior Full Stack Engineer as advertised on propylon.com. Many thanks! </p>
+
+                    
+                <ul class="d-flex justify-content-end align-items-center">
+                    <li class="social"><a target="_blank" href="https://stackoverflow.com/users/10465605/john-kealy"><i class="fa fa-stack-overflow"></i></a></li>
+                    <li class="social"><a target="_blank" href="https://github.com/johnckealy"><i class="fa fa-github"></i> </a></li>
+                    <li class="social"><a target="_blank" href="https://www.linkedin.com/in/johnckealy/"><i class="fa fa-linkedin"></i> </a></li>
+                </ul>                    
+
             </div>
         </div>
     </div>

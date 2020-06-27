@@ -1,0 +1,19 @@
+#search {
+    background-color: $color-deep;
+    padding: 5px;
+    border: none;
+    color: white;
+    &:focus {
+        outline: 2px solid black;
+    }
+}
+
+#search-submit {
+    background-color: $color-deep;
+    border: none;
+    color: white;
+    transform: rotate(45deg);
+    font-size: 20px;
+    outline: none;
+}
+

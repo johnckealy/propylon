@@ -32,7 +32,7 @@ else:
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['propylon.johnkealy.com']
+ALLOWED_HOSTS = ['localhost', 'propylon.johnkealy.com']
 
 
 # Application definition

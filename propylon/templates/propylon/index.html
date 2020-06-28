@@ -9,8 +9,8 @@
     <div class="banner d-flex justify-content-center align-items center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url({% static 'propylon/images/banner.jpg' %});">
         <div>
             <h1>A Transformation To Your Website</h1>
-            <h5 style="margin: 25px 0;"><strong>As an exercise, I've redesigned your website using 
-                HTML5 and CSS3. This is for demonstation only. I've told Google not to index the site, and will 
+            <h5 style="margin: 25px 0;"><strong>As an exercise, I've redesigned your landing page using 
+                HTML5 and CSS3. This is for demonstation only. I've told Google not to index this site, and will 
                 remove it after the Propylon team has had a chance to take a look!</strong></h5>
             <div class="btn btn-propy btn-propy-white">SOLUTIONS TO CREATE THE LAW</div>
             <div class="btn btn-propy btn-propy-yellow">SOLUTIONS TO UNDERSTAND THE LAW</div>
@@ -24,8 +24,8 @@
         <br>
         <h2 style="font-size: 26px;">I've used Python for almost 10 years, though much of this was in a 
             scientific/research capacity. More recently, web developement caught my interest – 
-            and I began to experiment with Flask and then Django. This Propylon mock-up site was 
-            written in Django 3.0. If you're interested, you can <a href="">see the source code here. </a> 
+            and I began to experiment with Flask and Django. This Propylon mock-up site was 
+            written in Django 3.0. If you're interested, you can <a target='_blank' href="https://github.com/johnckealy/propylon">see the source code here. </a> 
          </h2>
     </div>
 
@@ -66,17 +66,17 @@
     </div>
 </section>
 
-    <div class="container">
-        <div class="explanation-text">
-            <h2 style="font-size: 26px;"> <strong>Webpack</strong> is a powerful tool that allows the bundling of 
-                javascript and css into single files, among other things. To make the carousel below, 
-                I leveraged Webpack to install a carousel package from Node Package Manager (NPM),
-                as well as applying minification, transpiling, and auto-prefixing. I've also customised the
-                carousel contents to highlight my current strengths.  
-            </h2>
-            {% include 'propylon/_carousel.html' %}
-        </div>
+<div class="container">
+    <div class="explanation-text">
+        <h2 style="font-size: 26px;"> <strong>Webpack</strong> is a powerful tool that allows the bundling of 
+            javascript and css into single files, among other things. To make the carousel below, 
+            I leveraged Webpack to install the 'slick-carousel' package from Node Package Manager (NPM),
+            as well as applying minification, transpilation, and auto-prefixing. The carousel's contents have been 
+            customised to highlight some of my current strengths.  
+        </h2>
+        {% include 'propylon/_carousel.html' %}
     </div>
+</div>
 
 
 <section>
@@ -84,12 +84,12 @@
         <div>
             <h1 style="text-shadow: 2px 2px 2px #23394e;">Javascript</h1>
             <h5 style="text-shadow: 2px 2px 2px #23394e;">
-            My ability with Javscript is improving. But I wanted
+            My ability with Javscript is improving. I wanted
             to concentrate on the fundamentals of Vanilla Javascript before diving head first into the most popular
             framework of the day, since these will change with the times. That said, I have completed tutorials in Vue.js, and 
             I'd happily give React or Angular a try. </h5>
-            <h5> Click the link below to see an App I made for glider pilots
-            and meteorologists – it was written with Vanilla Javascript and a dash of D3.js.
+            <h5> Click the link below to visit an app I created for glider pilots
+            and hot-air ballonists. It was written with Vanilla Javascript, and a dash of D3.js.
             </h5>
             <a href="https://skewt.org" target="_blank">
                 <div class="btn btn-propy btn-propy-white">Visit SkewT.org</div>
@@ -100,21 +100,25 @@
 
 <section  style="background-color:#345370; padding: 40px">
     <div class="container">
-        <div class="d-flex">
+        <div class="row">
+            <div class="col-12 col-md-6">
             <h2 style="color:white; padding: 20px; font-size: 20px;" > 
                 <p>
                     I enjoy the challenge of <strong>full-stack</strong> ­– for me this means seeing an app from the frontend right through to 
                     the server in production. You may have noticed the URL of this website: <strong>propylon.johnkealy.com</strong>. I set 
                     up a VPS server using DigitalOcean to serve this Django app using <strong>Passenger</strong>, 
-                    <strong>Nginx</strong> and <strong>Gunicorn</strong>. Then I configured the DNS records for a subdomain of my portfolio site. 
-                    I even learned how to host multiple apps on the same server – greatly cutting down on my costs – 
+                    <strong>Nginx</strong> and <strong>Gunicorn</strong>. Then I created a subdomain of my portfolio site, and 
+                    configured the DNS. I even learned how to host multiple apps on the same server – greatly cutting down on my costs – 
                     as well as how to set up SSL certificates.
                 </p>
-                <p> I've been a user of Linux as my only operating system for many years now; my favourite flavour is 
-                    Ubuntu. I'm good with the <strong>command line </strong>(bash/zsh/ssh) – this makes working with servers a lot easier. 
+                <p> I've used <strong>Linux</strong> as my primary operating system for many years now (mainly Ubuntu), so
+                    I'm very competent with the <strong>command line </strong>(bash/zsh/ssh).
                 </p>
             </h2>
-            <img src="{% static 'propylon/images/nginx.jpg' %}" alt="nginx">
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="{% static 'propylon/images/nginx.jpg' %}" alt="nginx">
+            </div>
         </div>
     </div>
 </section>
@@ -133,6 +137,9 @@
 
                 <p>Please visit <a style="color:blue" href="https://johnkealy.com">johnkealy.com</a> for more, or visit my social links below. I hope to hear from you regarding 
                     the position of Junior Full Stack Engineer as advertised on propylon.com. Many thanks! </p>
+
+                <p>John Kealy </p>                    
+                <p><a style="color: blue;" href="mailto:johnckealy@gmail.com">johnckealy@gmail.com</a></p>
 
                     
                 <ul class="d-flex justify-content-end align-items-center">
